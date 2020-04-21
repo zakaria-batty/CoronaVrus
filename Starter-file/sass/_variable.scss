@@ -1,0 +1,30 @@
+$color_nav:#b1d2e3;
+$color_yellow:#f4cf1b;
+$color_titre:#1087c7;
+$color_texte:#87837fc2;
+$color_white:white;
+$color_black:black;
+$color_back:#494949;
+$color_ciel:#96c5dc;
+$color_green:#008000;
+
+$font-main:24px;
+$font-titre:21;
+$font-nav:19px;
+$font-header:13px;
+
+$font-family: 'Cairo', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+

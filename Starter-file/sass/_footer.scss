@@ -1,0 +1,137 @@
+.top-footer{
+    width: 100%;
+    display: block;
+    background-color:$color_titre;
+    background-image: url(/img/footer.png);
+    background-size: cover;
+    font-size: $font-main;
+    font-family: $font-family;
+    .div{
+        text-align: center;
+        color: $color_white;
+        padding-top: 14px;
+    }
+    .content-footer{
+        display: flex;
+        width: 95%;
+        padding: 50px 59px;
+        .info-media{
+            padding-top: 43px;
+            font-size: 24px;
+            margin: -39px 31px;
+            padding-left: 161px;
+            h1{
+                font-size: $font-main;
+                color:$color_yellow;
+                text-align: center;
+                margin: 30px;
+            }
+            .app{
+                background-image: url(/img/bg2.png);
+                padding: 13px;
+                margin: 17px;
+                border-radius: 10px;
+                border: none;
+                a{
+                    color: $color_titre;
+                }
+            }
+            .email{
+                border-bottom:  2px solid $color_yellow;
+                a{ color: $color_white;}
+            }
+        }
+        .info-box{
+            .prt2{
+                color: $color_white;
+            }
+            .prt1{
+                font-size: $font-main;
+            }
+        }
+    }
+}
+// /////////////////main-footer//////////////////////
+.main-footer{
+    display: block;
+    text-align: center;
+    background-image: url(/img/bgftr.png);
+    background-size: cover;
+    font-size: 18px;
+    color: $color_titre;
+    padding: 20px;
+    img{
+        padding: 20px;
+    }
+    .btn{
+        width: 177px;
+        border: none;
+        margin: 0;
+        text-align: center;
+        background: $color_titre;
+        color: $color_white;
+        font-family: 'PT Sans', sans-serif;
+        font-size: $font-main;
+        padding: 5px 196px;
+        border-radius: 8px;
+     }
+}
+// /////////////////main-footer//////////////////////
+.buttom-content{
+    width: 100%;
+    .logo-footer{
+        text-align: center;
+        img{
+            width: 5rem;
+        }
+    }
+    .flex-nav{
+        width: 100%;
+        display: flex;
+        /* margin: 30px; */
+        padding-left: 86px;
+    
+    }
+    .lest-nav{
+        ul{list-style: none;
+            li{
+                padding-bottom: 48px;
+                a{
+                    font-size: $font-nav;
+                    color:$color_black;
+                    span{
+                        border: 1px solid $color_titre;
+                        border-radius: 7px;
+                        padding: 3px;
+                        padding-right: 26px;
+                    }
+                }
+            }
+        }
+        
+    }
+    .ftr{
+        padding: 24px;
+    }
+    .contacts{
+        text-align: center;
+        h1{
+            padding-bottom: 20px;
+            color: $color_titre;
+        }
+        p{padding-bottom: 20px;}
+        .appel{
+            color: $color_green;
+            font-size: $font-main;
+        }
+    }
+    .text-nav{
+        padding-top: 84px;
+        p{
+            font-size: $font-header;
+            color: $color_texte;
+            padding-bottom: 13px;
+        }
+    }
+    
+}

@@ -1,0 +1,102 @@
+// //////////////top-content///////////////////
+.proteger{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .title-prtg{
+        color: $color_titre;
+        font-size: $font-titre;
+        text-align: center;
+        margin: 20px;
+    }
+    .img-proteger{
+        width: 96%;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        .img-info{
+            text-align: center;
+            padding: 36px 65px;
+         img{
+           width: 9rem;
+         }
+         p{
+            color:$color_back;
+         }
+        }
+    }
+    .home{
+        color: $color_back;
+        font-size: $font-titre;
+        text-align: center;
+        margin: 20px;
+        p{
+            padding-bottom: 13px;
+        }
+        img{
+            width: 100px;
+            padding-bottom: 26px;
+        }
+    }
+}
+// //////////////main-content///////////////////
+.Informations{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(/img/bgftr.png);
+    background-size: cover;
+    //justify-content: center;
+    padding: 35px;
+    .info{
+        text-align: center;
+        h1{
+            font-size: $font-titre;
+            color: $color_titre;
+            padding-bottom: 40px;;
+        }
+        p{
+            padding-bottom: 15px;
+            color: $color_back;
+            font-size: $font-nav;
+        }
+    }
+    .infmain{
+        padding: 0px 70px
+    }
+    .site{
+        padding-top: 73px;
+        a{
+            background-image: url(/img/footer.png);
+            padding: 21px;
+            font-size: $font-header;
+            color: $color_white;
+        }
+    }
+}
+// //////////////////////////
+.article{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: $color_titre;
+    font-size: $font-nav;
+    .prt2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 9rem;
+        }
+        .img3{
+            text-align: center;
+            padding: 90px 138px;
+            color: $color_back
+        }
+    }
+}
