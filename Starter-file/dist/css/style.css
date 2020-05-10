@@ -388,20 +388,20 @@ menu {
         font-size: 2em;
         font-weight: 700;
         color: #1087c7; }
-  menu .sect-question .question p {
+  menu .sect-question .question-affiche p {
     font-weight: 700;
     font-size: 1.5em;
     color: #7f7f7f;
     height: 15vh;
     padding-top: 5%; }
-  menu .sect-question .question .les-inputs {
+  menu .sect-question .question-affiche .les-inputs {
     text-align: initial; }
-  menu .sect-question .question .inpt {
+  menu .sect-question .question-affiche .inpt {
     padding: 20px; }
-    menu .sect-question .question .inpt input {
+    menu .sect-question .question-affiche .inpt input {
       height: 34px;
       width: 34px; }
-    menu .sect-question .question .inpt span {
+    menu .sect-question .question-affiche .inpt span {
       font-size: 24px;
       color: #87837fc2; }
   menu .sect-question .button {
