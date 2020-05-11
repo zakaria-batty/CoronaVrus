@@ -227,7 +227,7 @@ header {
   justify-content: center; }
   .proteger .title-prtg {
     color: #1087c7;
-    font-size: 21;
+    font-size: 21px;
     text-align: center;
     margin: 20px; }
   .proteger .img-proteger {
@@ -247,7 +247,7 @@ header {
         color: #494949; }
   .proteger .home {
     color: #494949;
-    font-size: 21;
+    font-size: 21px;
     text-align: center;
     margin: 20px; }
     .proteger .home p {
@@ -266,7 +266,7 @@ header {
   .Informations .info {
     text-align: center; }
     .Informations .info h1 {
-      font-size: 21;
+      font-size: 21px;
       color: #1087c7;
       padding-bottom: 40px; }
     .Informations .info p {
@@ -343,8 +343,7 @@ menu {
     menu .sect-pre .line {
       width: 18rem;
       height: 2px;
-      color: yellow;
-      background: yellow;
+      background: #f4cf1b;
       margin: 0 auto; }
   menu #demarer {
     width: 177px;
