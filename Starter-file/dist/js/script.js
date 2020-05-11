@@ -12,7 +12,7 @@ function create_question(id) {
   // Creating header for the question
   let question_header = document.createElement('p');
   question_header.classList.add('prg-question');
-  question_header.setAttribute('id', `Q${id}`)
+  question_header.setAttribute('id', id)
   question_header.innerText = question_object.question;
 
   // Preparing a form for the question
@@ -61,7 +61,7 @@ function create_question(id) {
       name: 'number_input',
       id: 'NumberInput',
       min: '0',
-      placeholder: question_object.label
+      placeholder: question_object.label //hna fin kin l mochkil maki taba9ch hadchi 
     })
 
     // Creating the form label
@@ -109,7 +109,10 @@ suivant.addEventListener('click', (event) =>{
 
   let question_container = document.querySelector('.question-affiche');
   let question_header = document.querySelector('.prg-question');
-  let question_id = parseInt(question_header.getAttribute('id')[1])
+  let question_id = parseInt(question_header.getAttribute('id'))
+
+  let current_question = question_instance.get_question_by_id(question_id)
+  console.log(document.get)
 
   if (question_id == question_instance.get_questions_length()){
     quitter();
