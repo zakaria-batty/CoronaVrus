@@ -14,8 +14,8 @@ export class Question {
                 type: "number",
                 label: "degés",
                 conditions: [
-                    { max: 39, min: 35.4, result: { value: 1, message: "Facteur de gravité" } },
-                    { min: 37.8, max: 38.9, result: { value: 1, message: "seuil retenu" } }
+                    { min: 37.8, max: 38.9, result: { value: 1, message: "seuil retenu" } },
+                    { max: 39, min: 35.4, result: { value: 1, message: "Facteur de gravité" } }
                 ]
             },
             {
@@ -195,4 +195,4 @@ const adviceFR = {
     num4 : "Votre situation ne relève probablement pas du Covid-19. Un avis médical est recommandé. Au moindre doute, appelez le 141.",
     num5 : "Votre situation ne relève probablement pas du Covid-19. N’hésitez pas à contacter votre médecin en cas de doute. Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la   situation.   Pour   toute information concernant   le   Covid-19 allez vers la page d’accueil.",
     disclamer: "La recommandation affichée peut évoluer suivant les informations en provenance des autorités de santé et des chercheurs. Elle ne constitue pas un avis médical. En cas de doute, demandez conseil à votre médecin ou pharmacien."
-}
+};
