@@ -343,8 +343,7 @@ menu {
     menu .sect-pre .line {
       width: 18rem;
       height: 2px;
-      color: yellow;
-      background: yellow;
+      background: #f4cf1b;
       margin: 0 auto; }
   menu #demarer {
     width: 177px;

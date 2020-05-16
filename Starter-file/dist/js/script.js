@@ -4,6 +4,9 @@ const demarer = document.getElementById('demarer');
 const suivant = document.getElementById('suivant');
 const precedent = document.getElementById('precedent');
 const question_instance = new Question()
+var conter = 0;
+var resultat = [];
+let valeur = 1;
 
 function create_question(id) {
   // Getting question object
@@ -24,7 +27,7 @@ function create_question(id) {
     // Creating a form field
     let form_field = document.createElement('div');
     form_field.classList.add('inpt');
-
+    
     // For every possible answer ...
     for(let answer of question_object.answers) {
       // Creating a form input for the answer
@@ -72,15 +75,16 @@ function create_question(id) {
     // Appending the last two parts into the question form
     question_form.append(form_input, form_label)
   }
-
+  
   // Returning the parts of the question block
   return [question_header, question_form];
+  
 }
 
-// 
+// function demarrage
 demarer.addEventListener('click', (event) =>{
   event.preventDefault()
-
+ 
   let question_container = document.querySelector('.question-affiche');
   let section = document.querySelectorAll('.section');
 
@@ -89,6 +93,8 @@ demarer.addEventListener('click', (event) =>{
   precedent.classList.add('hide');
   
   let question_parts = create_question(1)
+  let inputs = document.querySelectorAll('.inpt input');
+  
   question_container.innerHTML = "";
   question_parts.forEach( part => question_container.appendChild(part) )
 });
@@ -97,12 +103,15 @@ function quitter() {
   let section = document.querySelectorAll('.section');
   section[1].classList.add('hide');
   section[2].classList.remove('hide');
+  resultat.classList.remove('hide');
 }
 
 function recommancer() {
   let section = document.querySelectorAll('.section');
   section[0].classList.remove('hide');
   section[1].classList.add('hide');
+  // precedent.classList.add('hide');
+
 }
 
 suivant.addEventListener('click', (event) =>{
@@ -111,21 +120,47 @@ suivant.addEventListener('click', (event) =>{
   let question_container = document.querySelector('.question-affiche');
   let question_header = document.querySelector('.prg-question');
   let question_id = parseInt(question_header.getAttribute('id'))
-
-  // let current_question = question_instance.get_question_by_id(question_id)
+  let lengt_question = question_instance. get_questions_length()
+  let current_question = question_instance.get_question_by_id(question_id)
   // update_score(current_question)
-
-  if (question_id == question_instance.get_questions_length()){
+  
+  if (question_id == lengt_question){
     quitter();
   } else {
     let question_parts = create_question(question_id + 1)
-    
     question_container.innerHTML = "";
     question_parts.forEach( part => question_container.appendChild(part) )
+    // valueInput ()
   }
   
   precedent.classList.remove('hide');
 });
+
+
+// function valueInput (){
+//   var radios = document.querySelectorAll('[type="radio"]');
+// 	var nbr = document.querySelectorAll('[type="number"]');
+// 	var checked = [];
+//   var val = [];
+  
+//   for (let i = 0; i < radios.length; i++) {
+
+// 		if (radios[i].checked) {
+
+// 			checked.push(radios[i].value)
+// 		}
+//   }
+  
+// 	for (let i = 0; i < nbr.length; i++) {
+
+// 		val.push(nbr[i].value)
+
+//   }
+//   console.log(document.querySelectorAll('[type="radio"]')[0].value);
+//   return;
+// }
+
+
 
 precedent.addEventListener('click', (event) =>{
   event.preventDefault()
@@ -134,13 +169,17 @@ precedent.addEventListener('click', (event) =>{
   let question_header = document.querySelector('.prg-question');
   let question_id = parseInt(question_header.getAttribute('id'))
   
-  if (question_id-1 == 0){ recommancer(); } 
-  else {
-    let question_parts = create_question(question_id-1)
+  if (question_id-1 > 0){ 
     
+    let question_parts = create_question(question_id-1)
     question_container.innerHTML = "";
     question_parts.forEach( part => question_container.appendChild(part) )
   }
+  if(question_id-1 == 0){
+    recommancer();
+  }
   
-  precedent.classList.remove('hide');
+  
 });
+
+
