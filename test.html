@@ -28,33 +28,30 @@
   </header>
   <!-- ------------------------------------top-main--------------------------------- -->
 
-  <menu>
-    <!-- ------section-I-------- -->
-    <section class="sect-top section">
-      <div class="top-bar">
-        <div class="bar">
-          <img class="imgbar" src="./Starter-file/img/active.svg" alt="">
-          <h3 class="Info-bar">Informations</h3>
+  <main>
+    <section class="main__inform sect ">
+      <div class="main__tags">
+        <div class="main__tag">
+          <img class="main__inform__img  main__inform__img--active" src="./Starter-file/img/active.svg" alt="">
+          <h3 class="h3__active">Informations</h3>
         </div>
-
-        <div class="bar">
-          <img class="imgbar" src="./Starter-file/img/desactive.svg" alt="">
-          <h3 class="Info-bar">Questionnaire</h3>
+        <div class="main__tag">
+          <img class="main__inform__img" src="./Starter-file/img/desactive.svg" alt="">
+          <h3>Questionnaire</h3>
         </div>
-
-        <div class="bar">
-          <img class="imgbar" src="./Starter-file/img/desactive.svg" alt="">
-          <h3 class="Info-bar">Résultats</h3>
+        <div class="main__tag">
+          <img class="main__inform__img" src="./Starter-file/img//desactive.svg" alt="">
+          <h3>Résultats</h3>
         </div>
       </div>
-      <div class="sect-pre">
+      <div class="main__Preambule">
         <h3>Préambule</h3>
         <p>« L’application est fournie à titre gratuit, en l’état, uniquement à des fins d’information pour
           contribuer à fluidifier la prise en charge des personnes par les services d’urgences pendant l’épidémie de
           Coronavirus COVID-19. L’exhaustivité, l’exactitude, le caractère à jour des informations et contenus mis à
           disposition dans cette application, ou leur adéquation à des finalités particulières, ne sont pas garantis.
         </p>
-        <div class="line"></div>
+        <hr>
         <p> L’utilisation de l’application et de son contenu ne remplace en aucun cas le conseil nécessaire donné par
           votre médecin ou votre pharmacien ou tout autre professionnel de santé compétent dans chaque cas
           particulier. Tout examen ou décision de l’utilisateur doit être réalisé ou prise de manière autonome sur la
@@ -63,75 +60,66 @@
       </div>
       <a href="#" id="demarer">Demarer le test</a>
     </section>
-    <!-- ------section-II-------- -->
-    <section class="sect-question section hide">
-
-      <div class="top-bar">
-        <div class="bar">
-          <img class="imgbar" src="./Starter-file/img/desactive.svg" alt="">
-          <h3 class="Info-bar">Informations</h3>
+    <section class="main__questionnaire sect affiche">
+      <div class="main__tags">
+        <div class="main__tag">
+          <img class="main__inform__img" src="./Starter-file/img/desactive.svg" alt="">
+          <h3 class="h3__active">Informations</h3>
         </div>
-        <div class="bar">
-          <img class="imgbar" src="./Starter-file/img/active.svg" alt="">
-          <h3 class="Info-bar">Questionnaire</h3>
+        <div class="main__tag">
+          <img class="main__inform__img  main__inform__img--active" src="./Starter-file/img/active.svg" alt="">
+          <h3>Questionnaire</h3>
         </div>
-        <div class="bar">
-          <img class="imgbar" src="./Starter-file/img/desactive.svg" alt="">
-          <h3 class="Info-bar">Résultats</h3>
+        <div class="main__tag">
+          <img class="main__inform__img" src="./Starter-file/img/desactive.svg" alt="">
+          <h3>Résultats</h3>
         </div>
       </div>
-
       <form id="form">
-
-        <div class="progress-bar">
-          <div class="position">
+        <div class="numerotation">
+          <div class="relative">
             <div class="progressbar">
             </div>
-            <progress id="progress-max" max="3"> </progress>
+            <progress id="file" max="3"> </progress>
           </div>
-          <p id="Numprogress"></p>
+          <p id="afficheNum"></p>
         </div>
-
-        <div class="question-affiche">
+        <div class="questions">
 
         </div>
-
-        <div class="button">
+        <div class="inputs">
           <input type="submit" value="precedent" id="precedent">
           <input type="submit" value="suivant" id="suivant">
-          <input type="submit" value="afficher le resultat" id="resultat" class=" hide">
+          <input type="submit" value="afficher le resultat" id="resultat" class="affiche">
         </div>
-
       </form>
-    </section>
-    <!-- ------section-III-------- -->
-    <section class="sect-resultat section hide">
 
-      <div class="top-bar">
-        <div class="bar">
-          <img class="imgbar" src="./Starter-file/img/desactive.svg" alt="">
-          <h3 class="Info-bar">Informations</h3>
+    </section>
+    <section class="main__Resultat sect affiche">
+      <div class="main__tags">
+        <div class="main__tag">
+          <img class="main__inform__img " src="./Starter-file/img/desactive.svg" alt="">
+          <h3 class="h3__active">Informations</h3>
         </div>
-        <div class="bar">
-          <img class="imgbar" src="./Starter-file/img/desactive.svg" alt="">
-          <h3 class="Info-bar">Questionnaire</h3>
+        <div class="main__tag">
+          <img class="main__inform__img" src="./Starter-file/img/desactive.svg" alt="">
+          <h3>Questionnaire</h3>
         </div>
-        <div class="bar">
-          <img class="imgbar" src="./Starter-file/img/active.svg" alt="">
-          <h3 class="Info-bar">Résultats</h3>
+        <div class="main__tag">
+          <img class="main__inform__img main__inform__img--active " src="./Starter-file/img//active.svg" alt="">
+          <h3>Résultats</h3>
         </div>
       </div>
-
-      <div class="affiche-resultat">
+      <div class="affiche__resultat">
         <h3>Résultat</h3>
         <p id="affichageResult"> </p>
-        <div class="line"></div>
+        <hr>
         <span> Restez chez vous au maximum en attendant que les symptômes disparaissent. Prenez votre température deux
           fois par jour. Rappel des mesures d’hygiène. </span>
       </div>
-      <input type="submit" value="Recommencer le test" id="RecommenceTest">
+      <input type="submit" value="Recommencer le test" id="repeter">
     </section>
-  </menu>
+  </main>
   <!-- -----------------------------------footer--------------------------------------------- -->
   <footer>
     <!-- --top-footer-- -->
@@ -194,7 +182,7 @@
     </section>
   </footer>
 
-  <script type="module" src="./Starter-file/dist/js/script.js"></script>
+  <script src="./Starter-file/dist/js/general.js"></script>
  
 </body>
 
